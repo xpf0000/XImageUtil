@@ -60,6 +60,8 @@ class VC2: UIViewController,UITableViewDelegate,UITableViewDataSource,XImageView
 
         imgArr[indexPath.row] = cell.img
         
+        cell.img.groupDelegate = self
+        
         return cell
         
         

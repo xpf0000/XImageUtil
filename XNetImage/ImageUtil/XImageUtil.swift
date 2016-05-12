@@ -543,6 +543,11 @@ class XImageUtil: NSObject,NSURLSessionDataDelegate {
         self.XNetImagebackgroundUpdateTask = UIBackgroundTaskInvalid
     }
     
+    class func preDownLoad(url:String)
+    {
+        Share.createTask(url).startDownLoad()
+    }
+    
     func createTask(url:String)->XImageDownLoader
     {
         let hash = url.hash

@@ -82,6 +82,8 @@ class VC1: UIViewController {
         image.isGroup = true
         image1.isGroup = true
         
+        XImageUtil.preDownLoad(s2)
+        
         //XImageUtil.Share.createTask(s2).startDownLoad()
         
         
