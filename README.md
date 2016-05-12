@@ -11,6 +11,8 @@
 
 支持GIF WEBP , GIF使用自定义方法显示 加载速度更快 占用内存更小
 
+支持点击放大 群组浏览 支持各种contentMode
+
 二 项目引用:
 
 直接把ImageUtil文件夹拷贝到项目中 如果想支持WEBP 在桥接文件中 添加 #import "UIImage+WebP.h"  
@@ -75,7 +77,18 @@ imageView.isGroup = true
     
     5  设定网络环境
     
-    XImageUtil.Share.autoDown = .None
+    手动: XImageUtil.Share.autoDown = .None
     
+    自动: XImageUtil.Share.autoDown = .All
+    
+    wifi: XImageUtil.Share.autoDown = .WiFi
+    
+    流量: XImageUtil.Share.autoDown = .WWAN
+    
+    6. 删除缓存
+    
+    删除内存缓存: XImageUtil.removeAllMemCache()
+    
+    删除硬盘文件: XImageUtil.removeAllFile()
     
 
