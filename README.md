@@ -21,31 +21,31 @@
 
 主要是UIImageView扩展出来的属性
 
-1. url: 图片url地址 
+  1. url: 图片url地址 
 
-显示图片  
+    显示图片  
 
-let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
+    let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
 
-imageView.url = "http://xxxxxxxxxxx.jpg"
+    imageView.url = "http://xxxxxxxxxxx.jpg"
 
-直接下载图片  
+    直接下载图片  
 
-XImageUtil.preDownLoad("http://xxxxxxxxx.jpg")
+    XImageUtil.preDownLoad("http://xxxxxxxxx.jpg")
 
-2. placeholder: 默认图片
+  2. placeholder: 默认图片
 
-let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
+    let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
 
-imageView.placeholder = UIImage()
+    imageView.placeholder = UIImage()
 
-3. isGroup: 是否隶属于一组图片  true的时候 图片可以点击放大 并可在这组图片之间滑动切换 以父视图中所有isGroup为true的UIImageView作为该组所有图片
+  3. isGroup: 是否隶属于一组图片  true的时候 图片可以点击放大 并可在这组图片之间滑动切换 以父视图中所有isGroup为true的UIImageView作为该组所有图片
 
-let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
+    let imageView = UIImageView(frame:CGRectMake(0,0,100,100))
 
-imageView.isGroup = true
+    imageView.isGroup = true
 
-4. groupDelegate: 组代理 针对于 UICollectionView 等 无法放到一个父视图中的UIImageView使用 需实现代理方法
+  4. groupDelegate: 组代理 针对于 UICollectionView 等 无法放到一个父视图中的UIImageView使用 需实现代理方法
 
   var imgArr:[Int:UIImageView] = [:]
 
