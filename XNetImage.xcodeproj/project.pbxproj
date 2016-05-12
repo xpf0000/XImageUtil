@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17379F5C1C8ECC33000AD8D4 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17379F5B1C8ECC33000AD8D4 /* VC2.swift */; };
+		1741264E1C9A831500348720 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1741264C1C9A831500348720 /* TestCell.swift */; };
+		1741264F1C9A831500348720 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1741264D1C9A831500348720 /* TestCell.xib */; };
 		174566B71C8A8BA40038F8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174566B61C8A8BA40038F8FE /* AppDelegate.swift */; };
 		174566B91C8A8BA40038F8FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174566B81C8A8BA40038F8FE /* ViewController.swift */; };
 		174566BC1C8A8BA40038F8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174566BA1C8A8BA40038F8FE /* Main.storyboard */; };
 		174566BE1C8A8BA40038F8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174566BD1C8A8BA40038F8FE /* Assets.xcassets */; };
 		174566C11C8A8BA40038F8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174566BF1C8A8BA40038F8FE /* LaunchScreen.storyboard */; };
+		174612AE1CE1C38400DDEC31 /* MRZoomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612A01CE1C38400DDEC31 /* MRZoomScrollView.swift */; };
+		174612AF1CE1C38400DDEC31 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612A11CE1C38400DDEC31 /* Reach.swift */; };
+		174612B11CE1C38400DDEC31 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 174612A51CE1C38400DDEC31 /* UIImage+WebP.m */; };
+		174612B21CE1C38400DDEC31 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 174612A61CE1C38400DDEC31 /* WebP.framework */; };
+		174612B31CE1C38400DDEC31 /* XImageBrowse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612A71CE1C38400DDEC31 /* XImageBrowse.swift */; };
+		174612B41CE1C38400DDEC31 /* XImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612A81CE1C38400DDEC31 /* XImageCache.swift */; };
+		174612B51CE1C38400DDEC31 /* XImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612A91CE1C38400DDEC31 /* XImageDownLoader.swift */; };
+		174612B61CE1C38400DDEC31 /* XImageGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612AA1CE1C38400DDEC31 /* XImageGif.swift */; };
+		174612B71CE1C38400DDEC31 /* XImageOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612AB1CE1C38400DDEC31 /* XImageOperationManager.swift */; };
+		174612B81CE1C38400DDEC31 /* XImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612AC1CE1C38400DDEC31 /* XImageUtil.swift */; };
+		174612B91CE1C38400DDEC31 /* XImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612AD1CE1C38400DDEC31 /* XImageView.swift */; };
+		174612BB1CE1C4B700DDEC31 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174612BA1CE1C4B700DDEC31 /* UIImage.swift */; };
+		17D2005C1C8D1B0A00F80FCB /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D2005B1C8D1B0A00F80FCB /* VC1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17379F5B1C8ECC33000AD8D4 /* VC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		1741264C1C9A831500348720 /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		1741264D1C9A831500348720 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
 		174566B31C8A8BA40038F8FE /* XNetImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNetImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174566B61C8A8BA40038F8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174566B81C8A8BA40038F8FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +41,21 @@
 		174566BD1C8A8BA40038F8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		174566C01C8A8BA40038F8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		174566C21C8A8BA40038F8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174612A01CE1C38400DDEC31 /* MRZoomScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRZoomScrollView.swift; sourceTree = "<group>"; };
+		174612A11CE1C38400DDEC31 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		174612A41CE1C38400DDEC31 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		174612A51CE1C38400DDEC31 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		174612A61CE1C38400DDEC31 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		174612A71CE1C38400DDEC31 /* XImageBrowse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageBrowse.swift; sourceTree = "<group>"; };
+		174612A81CE1C38400DDEC31 /* XImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageCache.swift; sourceTree = "<group>"; };
+		174612A91CE1C38400DDEC31 /* XImageDownLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageDownLoader.swift; sourceTree = "<group>"; };
+		174612AA1CE1C38400DDEC31 /* XImageGif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageGif.swift; sourceTree = "<group>"; };
+		174612AB1CE1C38400DDEC31 /* XImageOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageOperationManager.swift; sourceTree = "<group>"; };
+		174612AC1CE1C38400DDEC31 /* XImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageUtil.swift; sourceTree = "<group>"; };
+		174612AD1CE1C38400DDEC31 /* XImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XImageView.swift; sourceTree = "<group>"; };
+		174612BA1CE1C4B700DDEC31 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		17D2005B1C8D1B0A00F80FCB /* VC1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		17D200991C8D74A100F80FCB /* XNetImage-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XNetImage-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174612B21CE1C38400DDEC31 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +89,40 @@
 		174566B51C8A8BA40038F8FE /* XNetImage */ = {
 			isa = PBXGroup;
 			children = (
+				1746129F1CE1C38400DDEC31 /* ImageUtil */,
 				174566B61C8A8BA40038F8FE /* AppDelegate.swift */,
 				174566B81C8A8BA40038F8FE /* ViewController.swift */,
+				17D2005B1C8D1B0A00F80FCB /* VC1.swift */,
+				17379F5B1C8ECC33000AD8D4 /* VC2.swift */,
+				1741264C1C9A831500348720 /* TestCell.swift */,
+				1741264D1C9A831500348720 /* TestCell.xib */,
 				174566BA1C8A8BA40038F8FE /* Main.storyboard */,
 				174566BD1C8A8BA40038F8FE /* Assets.xcassets */,
 				174566BF1C8A8BA40038F8FE /* LaunchScreen.storyboard */,
+				17D200991C8D74A100F80FCB /* XNetImage-Bridging-Header.h */,
 				174566C21C8A8BA40038F8FE /* Info.plist */,
 			);
 			path = XNetImage;
+			sourceTree = "<group>";
+		};
+		1746129F1CE1C38400DDEC31 /* ImageUtil */ = {
+			isa = PBXGroup;
+			children = (
+				174612BA1CE1C4B700DDEC31 /* UIImage.swift */,
+				174612A01CE1C38400DDEC31 /* MRZoomScrollView.swift */,
+				174612A11CE1C38400DDEC31 /* Reach.swift */,
+				174612A41CE1C38400DDEC31 /* UIImage+WebP.h */,
+				174612A51CE1C38400DDEC31 /* UIImage+WebP.m */,
+				174612A61CE1C38400DDEC31 /* WebP.framework */,
+				174612A71CE1C38400DDEC31 /* XImageBrowse.swift */,
+				174612A81CE1C38400DDEC31 /* XImageCache.swift */,
+				174612A91CE1C38400DDEC31 /* XImageDownLoader.swift */,
+				174612AA1CE1C38400DDEC31 /* XImageGif.swift */,
+				174612AB1CE1C38400DDEC31 /* XImageOperationManager.swift */,
+				174612AC1CE1C38400DDEC31 /* XImageUtil.swift */,
+				174612AD1CE1C38400DDEC31 /* XImageView.swift */,
+			);
+			path = ImageUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +185,7 @@
 			files = (
 				174566C11C8A8BA40038F8FE /* LaunchScreen.storyboard in Resources */,
 				174566BE1C8A8BA40038F8FE /* Assets.xcassets in Resources */,
+				1741264F1C9A831500348720 /* TestCell.xib in Resources */,
 				174566BC1C8A8BA40038F8FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +197,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174612B91CE1C38400DDEC31 /* XImageView.swift in Sources */,
+				174612B11CE1C38400DDEC31 /* UIImage+WebP.m in Sources */,
+				174612B81CE1C38400DDEC31 /* XImageUtil.swift in Sources */,
+				174612B71CE1C38400DDEC31 /* XImageOperationManager.swift in Sources */,
+				17379F5C1C8ECC33000AD8D4 /* VC2.swift in Sources */,
+				174612BB1CE1C4B700DDEC31 /* UIImage.swift in Sources */,
+				1741264E1C9A831500348720 /* TestCell.swift in Sources */,
 				174566B91C8A8BA40038F8FE /* ViewController.swift in Sources */,
 				174566B71C8A8BA40038F8FE /* AppDelegate.swift in Sources */,
+				174612B31CE1C38400DDEC31 /* XImageBrowse.swift in Sources */,
+				174612B51CE1C38400DDEC31 /* XImageDownLoader.swift in Sources */,
+				174612B41CE1C38400DDEC31 /* XImageCache.swift in Sources */,
+				174612B61CE1C38400DDEC31 /* XImageGif.swift in Sources */,
+				174612AF1CE1C38400DDEC31 /* Reach.swift in Sources */,
+				17D2005C1C8D1B0A00F80FCB /* VC1.swift in Sources */,
+				174612AE1CE1C38400DDEC31 /* MRZoomScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +323,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XNetImage/ImageUtil",
+				);
 				INFOPLIST_FILE = XNetImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hkkj.XNetImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XNetImage/XNetImage-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -258,10 +341,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XNetImage/ImageUtil",
+				);
 				INFOPLIST_FILE = XNetImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hkkj.XNetImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XNetImage/XNetImage-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +374,7 @@
 				174566C71C8A8BA40038F8FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

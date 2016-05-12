@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lgg-3b-Cj0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XNetImage" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,199 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2T-bZ-EqB">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="跳转">
+                                    <color key="titleColor" red="0.16862745098039217" green="0.38039215686274508" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="feM-WN-JLT" kind="show" id="G2E-H0-bXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXw-Sk-iDN">
+                                <rect key="frame" x="255" y="356" width="90" height="30"/>
+                                <state key="normal" title="清空内存缓存"/>
+                                <connections>
+                                    <action selector="cleanMCache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qAC-8z-U04"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7K-ox-uZi">
+                                <rect key="frame" x="255" y="426" width="90" height="30"/>
+                                <state key="normal" title="删除硬盘文件"/>
+                                <connections>
+                                    <action selector="cleanCache:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L09-8T-Ahz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILw-wt-Q00">
+                                <rect key="frame" x="279" y="221" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kfz-9m-9iE">
+                                <rect key="frame" x="110" y="426" width="105" height="30"/>
+                                <state key="normal" title="手机流量下下载"/>
+                                <connections>
+                                    <action selector="mobil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeu-Rb-4ei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kf-83-nKR">
+                                <rect key="frame" x="133" y="217" width="60" height="30"/>
+                                <state key="normal" title="手动下载"/>
+                                <connections>
+                                    <action selector="userControll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwl-O7-dwg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1Y-EK-TCb">
+                                <rect key="frame" x="133" y="285" width="60" height="30"/>
+                                <state key="normal" title="自动下载"/>
+                                <connections>
+                                    <action selector="auto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hda-07-N5v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rs-dl-6eC">
+                                <rect key="frame" x="113" y="356" width="99" height="30"/>
+                                <state key="normal" title="wifi环境下下载"/>
+                                <connections>
+                                    <action selector="wifi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDQ-Nh-r43"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9rs-dl-6eC" firstAttribute="centerX" secondItem="Kfz-9m-9iE" secondAttribute="centerX" id="Bhk-4s-AQl"/>
+                            <constraint firstItem="n7K-ox-uZi" firstAttribute="top" secondItem="MXw-Sk-iDN" secondAttribute="bottom" constant="40" id="Fav-0Q-I3U"/>
+                            <constraint firstItem="1kf-83-nKR" firstAttribute="centerX" secondItem="Kfz-9m-9iE" secondAttribute="centerX" id="LCb-by-2Ep"/>
+                            <constraint firstItem="1kf-83-nKR" firstAttribute="centerY" secondItem="ILw-wt-Q00" secondAttribute="centerY" id="MX5-pE-SNU"/>
+                            <constraint firstItem="K2T-bZ-EqB" firstAttribute="top" secondItem="ILw-wt-Q00" secondAttribute="bottom" constant="43" id="OeO-XQ-czS"/>
+                            <constraint firstItem="ILw-wt-Q00" firstAttribute="centerX" secondItem="K2T-bZ-EqB" secondAttribute="centerX" id="UL0-Fl-DpH"/>
+                            <constraint firstItem="Kfz-9m-9iE" firstAttribute="centerY" secondItem="n7K-ox-uZi" secondAttribute="centerY" id="Xg4-fG-bZH"/>
+                            <constraint firstItem="n7K-ox-uZi" firstAttribute="leading" secondItem="Kfz-9m-9iE" secondAttribute="trailing" constant="40" id="ZBr-8w-TTr"/>
+                            <constraint firstItem="x1Y-EK-TCb" firstAttribute="centerX" secondItem="Kfz-9m-9iE" secondAttribute="centerX" id="eKM-PZ-bK2"/>
+                            <constraint firstItem="MXw-Sk-iDN" firstAttribute="top" secondItem="K2T-bZ-EqB" secondAttribute="bottom" constant="41" id="fP8-oJ-hoY"/>
+                            <constraint firstItem="x1Y-EK-TCb" firstAttribute="centerY" secondItem="K2T-bZ-EqB" secondAttribute="centerY" id="hrK-Ta-Y1L"/>
+                            <constraint firstItem="K2T-bZ-EqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n3K-bS-8q7"/>
+                            <constraint firstItem="9rs-dl-6eC" firstAttribute="centerY" secondItem="MXw-Sk-iDN" secondAttribute="centerY" id="p72-h0-mH7"/>
+                            <constraint firstItem="K2T-bZ-EqB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tum-SR-JjC"/>
+                            <constraint firstItem="n7K-ox-uZi" firstAttribute="centerX" secondItem="MXw-Sk-iDN" secondAttribute="centerX" id="wnX-uM-Ev8"/>
+                            <constraint firstItem="MXw-Sk-iDN" firstAttribute="centerX" secondItem="K2T-bZ-EqB" secondAttribute="centerX" id="xJs-DX-KfI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tho-kw-1h8"/>
+                    <connections>
+                        <outlet property="label" destination="ILw-wt-Q00" id="2oc-Mn-08V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="mzM-VF-dfq">
+            <objects>
+                <viewController storyboardIdentifier="VC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o8c-fw-Lun" customClass="VC2" customModule="XNetImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ebd-LQ-fYQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LY7-fL-cLn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tm4-uc-hCq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7v-6c-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301" y="983"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="10L-ni-WbF">
+            <objects>
+                <navigationController id="lgg-3b-Cj0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HgN-mY-JQn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mwp-Z6-PvR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zlf-20-m3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-432" y="216"/>
+        </scene>
+        <!--VC1-->
+        <scene sceneID="ATb-ii-e2L">
+            <objects>
+                <viewController storyboardIdentifier="VC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="feM-WN-JLT" customClass="VC1" customModule="XNetImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bgp-f5-XPV"/>
+                        <viewControllerLayoutGuide type="bottom" id="tAA-gc-yQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qwb-8z-LxK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ERc-fE-dow">
+                                <rect key="frame" x="0.0" y="0.0" width="295" height="193"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xOS-WC-Elu">
+                                <rect key="frame" x="305" y="0.0" width="295" height="193"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSK-qv-xK0">
+                                <rect key="frame" x="0.0" y="203" width="295" height="194"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-EP-8Th">
+                                <rect key="frame" x="305" y="203" width="295" height="194"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIo-rs-E16">
+                                <rect key="frame" x="0.0" y="407" width="295" height="193"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTI-RB-mib">
+                                <rect key="frame" x="305" y="407" width="295" height="193"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YTI-RB-mib" firstAttribute="leading" secondItem="rIo-rs-E16" secondAttribute="trailing" constant="10" id="2bn-gl-D64"/>
+                            <constraint firstItem="ERc-fE-dow" firstAttribute="top" secondItem="Qwb-8z-LxK" secondAttribute="top" id="3YV-CF-EbJ"/>
+                            <constraint firstItem="k3g-EP-8Th" firstAttribute="leading" secondItem="xOS-WC-Elu" secondAttribute="leading" id="3aR-XZ-A8e"/>
+                            <constraint firstItem="k3g-EP-8Th" firstAttribute="centerY" secondItem="dSK-qv-xK0" secondAttribute="centerY" id="4d6-6T-9TV"/>
+                            <constraint firstItem="xOS-WC-Elu" firstAttribute="leading" secondItem="ERc-fE-dow" secondAttribute="trailing" constant="10" id="7ce-ko-qsk"/>
+                            <constraint firstItem="rIo-rs-E16" firstAttribute="height" secondItem="dSK-qv-xK0" secondAttribute="height" id="9dA-8s-HOo"/>
+                            <constraint firstItem="tAA-gc-yQv" firstAttribute="top" secondItem="rIo-rs-E16" secondAttribute="bottom" id="CNJ-e0-b8b"/>
+                            <constraint firstItem="dSK-qv-xK0" firstAttribute="height" secondItem="ERc-fE-dow" secondAttribute="height" id="Dri-6j-1tZ"/>
+                            <constraint firstItem="dSK-qv-xK0" firstAttribute="leading" secondItem="ERc-fE-dow" secondAttribute="leading" id="EdH-th-mXO"/>
+                            <constraint firstItem="YTI-RB-mib" firstAttribute="centerY" secondItem="rIo-rs-E16" secondAttribute="centerY" id="L0I-n6-GGp"/>
+                            <constraint firstItem="ERc-fE-dow" firstAttribute="leading" secondItem="Qwb-8z-LxK" secondAttribute="leading" id="O4u-Fn-AUl"/>
+                            <constraint firstItem="xOS-WC-Elu" firstAttribute="width" secondItem="ERc-fE-dow" secondAttribute="width" id="Rdx-6f-1FM"/>
+                            <constraint firstItem="rIo-rs-E16" firstAttribute="width" secondItem="dSK-qv-xK0" secondAttribute="width" id="SKI-NL-z0x"/>
+                            <constraint firstAttribute="trailing" secondItem="xOS-WC-Elu" secondAttribute="trailing" id="Sah-n4-eJw"/>
+                            <constraint firstItem="rIo-rs-E16" firstAttribute="leading" secondItem="dSK-qv-xK0" secondAttribute="leading" id="Scz-Qi-p0h"/>
+                            <constraint firstItem="dSK-qv-xK0" firstAttribute="width" secondItem="ERc-fE-dow" secondAttribute="width" id="TOk-c8-LaO"/>
+                            <constraint firstItem="YTI-RB-mib" firstAttribute="trailing" secondItem="k3g-EP-8Th" secondAttribute="trailing" id="Wuq-os-2gC"/>
+                            <constraint firstItem="YTI-RB-mib" firstAttribute="height" secondItem="k3g-EP-8Th" secondAttribute="height" id="YH6-Bb-cBE"/>
+                            <constraint firstItem="xOS-WC-Elu" firstAttribute="top" secondItem="ERc-fE-dow" secondAttribute="top" id="Yzp-eo-qXu"/>
+                            <constraint firstItem="YTI-RB-mib" firstAttribute="width" secondItem="k3g-EP-8Th" secondAttribute="width" id="e8J-GA-mPu"/>
+                            <constraint firstItem="rIo-rs-E16" firstAttribute="top" secondItem="dSK-qv-xK0" secondAttribute="bottom" constant="10" id="laA-hg-PAa"/>
+                            <constraint firstItem="k3g-EP-8Th" firstAttribute="width" secondItem="xOS-WC-Elu" secondAttribute="width" id="lfL-3L-HNQ"/>
+                            <constraint firstItem="dSK-qv-xK0" firstAttribute="top" secondItem="ERc-fE-dow" secondAttribute="bottom" constant="10" id="no8-zM-4hR"/>
+                            <constraint firstItem="k3g-EP-8Th" firstAttribute="height" secondItem="xOS-WC-Elu" secondAttribute="height" id="sRI-zy-JUQ"/>
+                            <constraint firstItem="xOS-WC-Elu" firstAttribute="height" secondItem="ERc-fE-dow" secondAttribute="height" id="zUK-A0-4sB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="ERc-fE-dow" id="rJc-jy-mVa"/>
+                        <outlet property="image1" destination="xOS-WC-Elu" id="PIF-5l-bcd"/>
+                        <outlet property="image2" destination="dSK-qv-xK0" id="on0-cH-bZS"/>
+                        <outlet property="image3" destination="k3g-EP-8Th" id="HPK-Z4-7fP"/>
+                        <outlet property="image4" destination="rIo-rs-E16" id="RlE-Jl-f7O"/>
+                        <outlet property="image5" destination="YTI-RB-mib" id="V1M-nC-ak6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MY9-mr-wgF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="216"/>
         </scene>
     </scenes>
 </document>
