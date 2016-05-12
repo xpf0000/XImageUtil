@@ -75,20 +75,20 @@ imageView.isGroup = true
 
     }
     
-    5  设定网络环境
+      5  设定网络环境
     
-    手动: XImageUtil.Share.autoDown = .None
+        手动: XImageUtil.Share.autoDown = .None
     
-    自动: XImageUtil.Share.autoDown = .All
+        自动: XImageUtil.Share.autoDown = .All
     
-    wifi: XImageUtil.Share.autoDown = .WiFi
+        wifi: XImageUtil.Share.autoDown = .WiFi
     
-    流量: XImageUtil.Share.autoDown = .WWAN
+        流量: XImageUtil.Share.autoDown = .WWAN
+      
+      6. 删除缓存
     
-    6. 删除缓存
+        删除内存缓存: XImageUtil.removeAllMemCache()
     
-    删除内存缓存: XImageUtil.removeAllMemCache()
-    
-    删除硬盘文件: XImageUtil.removeAllFile()
+        删除硬盘文件: XImageUtil.removeAllFile()
     
 
